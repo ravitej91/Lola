@@ -1,0 +1,104 @@
+/* 
+    Created on : 16 Sep, 2014, 9:54:41 AM
+    Author     : Ravi Teja G <ravi@obelisksolutions.in>
+*/
+#page-wrapper {
+    padding-top: 20px;
+}
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 3px;
+}
+
+.node text { font: 12px sans-serif; }
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+}
+
+#lolaTooltip {
+    color: #fff;
+    background-color: rgba( 0, 0, 0, .7);
+    text-shadow: none;
+    font-size: .8em;
+    visibility: hidden;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    text-align: center;
+    opacity: 0;
+    z-index: 999;
+    padding: 3px 8px;
+    position: absolute;
+    cursor: default;
+    -webkit-transition: all 240ms ease-in-out;
+    -moz-transition: all 240ms ease-in-out;
+    -ms-transition: all 240ms ease-in-out;
+    -o-transition: all 240ms ease-in-out;
+    transition: all 240ms ease-in-out;
+}
+#lolaTooltip:after {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    margin-left: -7px;
+    content: ' ';
+    height: 0px;
+    width: 0px;
+    border: 6px solid transparent;
+    border-top-color: rgba( 0, 0, 0, .7);
+}
+#lolaTooltip.active {
+    visibility:visible;
+    opacity:1;
+}
+lola-sun-burst > svg {
+    width: 100%;
+    height: 480px;
+}
+
+path {
+    stroke: #ffad93;
+    stroke-width: 1;
+    cursor: pointer;
+}
+
+.lola-legend-li {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid #ccc;
+}
+.inner-ul li {
+    border: none;
+}
+.inner-ul li:last-child {
+    border: none;
+}
+.lola-legend-li:last-child {
+    border-bottom: 1px solid #ccc;
+}
+#lola-legend-innerdiv>ul>li:before,#lola-legend-innerdiv:after {
+    border: 0;
+}
+#lola-legend-innerdiv li:before {
+    border-left: 1px solid #999;
+    bottom: 50px;
+    height: 100%;
+    top: 0;
+    width: 1px;
+}
+
+#lola-legend-innerdiv li:before, #lola-legend-innerdiv li:after {
+    content: '';
+    left: -20px;
+    position: absolute;
+    right: auto;
+}
